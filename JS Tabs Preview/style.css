@@ -49,7 +49,7 @@ nav a {
   text-decoration: none;
   color: gray;
   font-size: 1.5rem;
-  transform: all 0.3s;
+  transition: all 0.3s;
 }
 
 .link:hover{
@@ -62,12 +62,12 @@ nav a {
 }
 
 .link.tabTwo{
-  background-color: #4e5052;
+  background-color: #42b883;
   color: white;
 }
 
 .link.tabThree{
-  background-color: #4e5052;
+  background-color: #b52e31;
   color: white;
 }
 
@@ -99,10 +99,10 @@ nav a {
 
 @keyframes  neon-glow-animation{
       0%{
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 10px rgba(255, 0, 0, 1);
       }
       100%{
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 20px rgba(255, 0, 0, 1);
       }
 }
 
