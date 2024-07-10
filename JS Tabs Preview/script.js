@@ -7,10 +7,10 @@ const item = document.querySelectorAll(".item");
 const icon = document.querySelector(".big-icon");
 const active = document.querySelector(".active");
 
-function setColors(tab,bgColor, iconClass,infoColor){
+function setColors(tab, bgColor,  iconClass, infoColor){
       body.style.backgroundColor = bgColor;
       icon.innerHTML = `<i class = "${iconClass}"></i>`;
-      for(let i =0; i<item.length; i++){
+      for(let i =0; i < item.length; i++){
             item[i].style.color = infoColor;
       }
 }
@@ -25,9 +25,9 @@ tabOne.addEventListener("click", ()=>{
 
 tabTwo.addEventListener("click", ()=>{
   setColors(tabTwo, "#42b883", "fab fa-vuejs", "#42b883");
-  tabTwo.classList.add("tabOne");
-  tabOne.classList.remove("tabOne");
-  tabThree.classList.remove("tabOne");
+  tabTwo.classList.add("tabTwo");
+  tabOne.classList.remove("tabTwo");
+  tabThree.classList.remove("tabTwo");
 })
 
 tabThree.addEventListener("click", ()=>{
@@ -37,6 +37,7 @@ tabThree.addEventListener("click", ()=>{
   tabOne.classList.remove("tabThree");
 })
 
-
+ 
 setColors(tabOne,"#00d8ff", "fab fa-react","#00d8ff");
 tabOne.classList.add("tabOne");
+
