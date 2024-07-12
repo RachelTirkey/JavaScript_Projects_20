@@ -1,7 +1,7 @@
 const button = document.getElementById("generateButton");
 const copyButton = document.getElementById("copyButton");
 const show = document.querySelector(".show");
-const passwordInput = document.getElementById("Password");
+const passwordInput = document.getElementById("password");
 
 generateButton.onclick = function generatePassword(){
 
@@ -9,15 +9,15 @@ generateButton.onclick = function generatePassword(){
 
 
       const pwdLength = 10;
-      let Password = "";
+      let password = "";
 
       for(let i = 0; i < pwdLength; i++){
         let generatePwd = Math.floor(Math.random() * character.length);
-        Password += character.substring(generatePwd, generatePwd + 1)
+        password += character.substring(generatePwd, generatePwd + 1)
       }
 
 
-      passwordInput.value = Password;
+      passwordInput.value = password;
 
 
 
