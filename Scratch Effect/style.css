@@ -17,8 +17,8 @@ body{
 span{
     display: block;
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     background: #333;
     pointer-events: none;
     border-radius: 50%;
