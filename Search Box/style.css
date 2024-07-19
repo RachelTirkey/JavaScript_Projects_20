@@ -51,7 +51,7 @@ body{
 }
 
 .container.active .button{
-  transform: translateY(198px);
+  transform: translateX(198px);
   background-color: royalblue;
 }
 
