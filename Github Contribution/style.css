@@ -14,6 +14,11 @@ body{
 }
 
 h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10%;
    color: whitesmoke;
    text-decoration: underline;
 }
@@ -24,4 +29,20 @@ h1{
    align-items: center;
    flex-wrap: wrap;
    max-width: 420px;
+}
+
+.activity{
+  background-color: rgb(214, 214, 214);
+  box-shadow: 0 0 2px rgb(151, 151, 151);
+  margin: 5px;
+  height: 35px;
+  width: 35px;
+  transition: 3s ease;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.activity:hover{
+   transition-duration: 0s;
+   overflow: hidden;
 }
